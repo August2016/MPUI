@@ -12,8 +12,8 @@ var rename      = require('gulp-rename');                   // 文件更名
 // 文件头申明
 var banner = [
     '/**',
-    ' * H5UI (http://h5ui.io)',
-    ' * Copyright (C) <%= new Date().getFullYear() %> H5UI.io',
+    ' * MPUI (http://https://github.com/August2016/h5ui)',
+    ' * Copyright (C) <%= new Date().getFullYear() %> MPUI',
     ' * Licensed under the MIT license (https://mit-license.org)',
     ' */',
     ''].join('\n');
@@ -38,13 +38,18 @@ gulp.task('less', function() {
 // JS文件合并[任务]
 var paths = {
     scripts: [
+        './src/js/device/device.js',
+        './src/js/jquery-extend.js',
         './src/js/fastclick/fastclick.js',              // FastClick jsv2 (https://github.com/ftlabs/fastclick)
         './src/js/lazyload/jquery.lazyload.min.js',     // Lazyload 1.9.7 (https://github.com/tuupola/jquery_lazyload)
         './src/js/widget/button.js',                    // Bootstrap: button.js
         './src/js/widget/modal.js',                     // Bootstrap: modal.js
         './src/js/widget/tab.js',                       // Bootstrap: tab.js
         './src/js/widget/slider.js',                    // Bootstrap: slider.js
-        './src/js/base.js'                              // Base js
+        './src/js/widget/picker.js',
+        './src/js/widget/city.data.3.js',
+        './src/js/widget/city.picker.js',
+        './src/js/base.js'                             // Base js
     ]
 };
 gulp.task('scripts', function() {
