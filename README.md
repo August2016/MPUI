@@ -4,11 +4,11 @@
 
 ## 变更列表
 
-### MPUI-0.01
+### MPUI-0.0.1
 - [x] 添加多级联动区域选择
 仿照jquery-weui citypicker添加地区选择器。
 
-### MPUI-0.02
+### MPUI-0.0.2
 - [X] 添加swiper默认设置
 
 具体用法参见: [swiper中文网](http://www.swiper.com.cn)
