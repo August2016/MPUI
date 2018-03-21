@@ -8,6 +8,12 @@
 - [x] 添加多级联动区域选择
 仿照jquery-weui citypicker添加地区选择器。
 
-### todo MPUI-0.02
+### MPUI-0.02
+- [X] 添加swiper默认设置
+
+具体用法参见: [swiper中文网](http://www.swiper.com.cn)
+
+todo
+
 计划: 城市列表换成高德地图行政列表
 其它：根据需求添加其它内容 

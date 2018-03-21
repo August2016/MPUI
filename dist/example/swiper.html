@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="keywords"
+          content="H5UI,移动UI组件库,H5前端,前端样式库,CSS样式库,H5UI交互设计,前端框架,UI框架,UI-framework,Mobile-front-end,CSS-framework">
+    <meta name="description" content="H5UI-简洁优雅的移动UI组件库">
+
+    <title>Swiper</title>
+
+    <!-- Favicon icon -->
+    <link rel="shortcut icon" href="../img/favicon.ico">
+
+    <!-- H5UI CSS -->
+    <link rel="stylesheet" href="../css/h5ui.min.css">
+    <!-- Example CSS -->
+    <link rel="stylesheet" href="../css/example.min.css">
+
+    <!-- Swiper css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/css/swiper.css">
+
+    <style>
+        body {
+            background: #fff;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 500px;
+            height: 300px;
+
+        }
+    </style>
+
+
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?849d2590ddf20decb7453afa67c978c0";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+
+</head>
+
+<body ontouchstart>
+<div class="h5ui-page top">
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(img/nature1.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/nature2.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/nature3.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/nature4.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/nature5.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/nature6.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/nature7.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/nature8.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/nature9.jpg)"></div>
+            <div class="swiper-slide" style="background-image:url(img/nature10.jpg)"></div>
+        </div>
+        <!-- 添加分页插件 配合js-->
+        <!--<div class="swiper-pagination"></div>-->
+    </div>
+
+    <!-- 参考 -->
+    <div class="h5ui-agree">
+        <span>更多请参考<a href="http://www.swiper.com.cn">《swiper中文网》</a></span>
+    </div>
+    <!-- 参考 -->
+</div>
+
+<!-- Copyright -->
+<div class="example-copyright fixed">
+    <a href="../index.html" class="flag"></a>
+</div>
+<!-- jQuery -->
+<script src="../js/jquery.min.js"></script>
+<!-- H5UI JS -->
+<script src="../js/h5ui.min.js"></script>
+<!-- Swiper JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.6/js/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        loop: true,
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true
+        }/*, 分页插件js配置
+        pagination: {
+            el: '.swiper-pagination'
+        }*/
+    });
+</script>
+</body>
+</html>
